@@ -1,27 +1,13 @@
-!DOCTYPE HTML>
-    `<html>
-    `<body>
-    `
-    `<!-- Create 500x500 canvas -->
+<!DOCTYPE HTML>
+    <html>
+    <body>
+    
+    <!-- Create 500x500 canvas -->
     <canvas id="canvas" width="500" height="500"></canvas>
     
     <!-- JQuery -->
-    <script src="http://code.jquery.com/jquery-2.0.2.min.js" type="text/javascript">
-        $(document).ready(function(){
-        // Initializa Canvas
-        var canvas = $("#canvas")[0]; // The canvas variable contains our <canvas> element
-        var ctx = canvas.getContext("2d"); // We initialize the 2D context of canvas in ctx
-        var w = $("#canvas").width(); // We save width and height
-        var h = $("#canvas").height();
-        
-        // Draw the canvas
-        ctx.fillStyle = "white";
-        ctx.fillRect(0, 0, w, h);
-        ctx.strokeStyle = "black";
-        ctx.strokeRect(0, 0, w, h);
-        
-        });
-    </script>
+    <script src="http://code.jquery.com/jquery-2.0.2.min.js" type="text/javascript"></script>
+    <script src="snakev1.js" type="text/javascript"></script>
     
     </body>
     </html>
