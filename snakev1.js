@@ -25,7 +25,7 @@ $(document).ready(function () {
         //Lets move the snake now using a timer which will trigger the paint function
         //every 60ms
         if (typeof game_loop != "undefined") clearInterval(game_loop);
-        game_loop = setInterval(paint, 60/speed);
+        game_loop = setInterval(paint, 60 / speed);
     }
     init();
 
@@ -120,7 +120,6 @@ $(document).ready(function () {
     }
 
     //Lets first create a generic function to paint cells
-
     function paint_cell(x, y) {
         ctx.fillStyle = "blue";
         ctx.fillRect(x * cw, y * cw, cw, cw);
@@ -147,11 +146,4 @@ $(document).ready(function () {
         else if (key == "40" && d != "up") d = "down";
         //The snake is now keyboard controllable
     })
-
-
-
-
-
-
-
 })
